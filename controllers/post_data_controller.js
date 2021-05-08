@@ -11,7 +11,13 @@ module.exports.home_post=function(req,res){
         intro:req.body.intro ,
         location:req.body.location,
         email:req.body.email,
-        contact:req.body.contact 
+        image:req.body.image,
+        contact:req.body.contact,
+        
+        classDetails:req.body.classDetails,
+        courseDescription:req.body.courseDescription,
+        skills:req.body.skills,
+        fee:req.body.fee,
     },
     function(err, newTeacher){
         // if(err){console.log('error in creating teacheer'); return }

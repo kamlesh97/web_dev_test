@@ -7,10 +7,44 @@ body{
 
 li{
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    margin: 10px;
+    /* display: inline; */
+    /* justify-content: space-around; */
 }
 
 .o{
-    border: 1px red solid;
+    border: 1px solid red;
 }
+
+form{
+    display:flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+}
+
+.d2{
+    display: block;
+}
+
+
+.teacher{
+    display: flex;
+    justify-content: space-around;
+    padding:0px;
+    margin-left: -40px;
+}
+
+
+#panel {
+    display: none;
+   
+  }
+
+  .course{
+      margin-right: 50px;
+  }
+
+  .intro{
+    margin-left: 100px;
+      margin-right: -50px;
+  }

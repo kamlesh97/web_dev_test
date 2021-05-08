@@ -11,7 +11,7 @@ router.get('/',homeController.home);
 // router.use('/index_post_data',require('./index_post_data'));
 router.use('/created',require('./index_post_data'));
 router.use('/deleted',require('./index_delete_data'));
-
+// router.use('/inquires',require('./index_inquiry'));
 
 
 module.exports=router;

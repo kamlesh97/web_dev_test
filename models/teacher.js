@@ -26,6 +26,26 @@ const teacherSchema=new mongoose.Schema({
         type:Number,
         require:true
     },
+    classDetails:{
+        type:String,
+        require:true
+    },
+    courseDescription:{
+        type:String,
+        require:true
+    },
+    skills:{
+        type:String,
+        require:true
+    },
+    fee:{
+        type:Number,
+        require:true
+    },
+    image:{
+        data: Buffer,
+        contentType: String
+    }
 })
 
 
