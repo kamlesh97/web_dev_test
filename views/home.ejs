@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <h1>render from html</h1>
+    <h1>Registration Form</h1>
+
+        <div>
+            <ul>
+                <% for( let i of teacher_list) { %>
+                <li class="o">
+                    <div>
+                    <p><%= i.name%></p>
+                    <p><%=i.qualification%></p>
+                    <p><%=i.intro%></p>
+                    <p><%=i.location%></p>
+                    <p><%=i.contact%></p>
+                    <p><%=i.email%></p>
+                     </div>
+
+                    <div>
+                        <a href="/delete_data/?id=<%= i._id %>"> delete</a>
+                    </div>
+                </li>
+                <%}%>    
+            </ul>
+        </div>
+
+
+        <form action="create_data" method="POST">
+            <input type="text" name='name'  placeholder="name" required>
+            <input type="text" name='qualification' placeholder="qualification" required>
+            <input type="text" name='intro' placeholder="intro" required>
+            <input type="text" name='location' placeholder="location" required>
+            <input type="number" name="contact" placeholder="contact" required>
+            <input type="text" name='email' placeholder="email" required>
+            <button type="submit">register</button> 
+
+        </form>
+
+
 </body>
 </html>
