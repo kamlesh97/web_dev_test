@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-
+<a href="/create_data">reg</a>
         <div>
             <ul>
                 <% for( let i of teacher_list) { %>
@@ -25,24 +25,36 @@
                      </div>
 
                     <div>
-                        <a href="/delete_data/?id=<%= i._id %>"> delete</a>
+                        <a href="/deleted/delete_data/?id=<%= i._id %>"> delete</a>
                     </div>
                 </li>
                 <%}%>    
             </ul>
         </div>
 
-
-        <form action="create_data" method="POST">
+        <form action="/created/create_data" method="POST">
+            <label for="email"><b>Name</b></label>
             <input type="text" name='name'  placeholder="name" required>
+
+            <label for="email"><b>Qualification</b></label>
             <input type="text" name='qualification' placeholder="qualification" required>
-            <input type="text" name='intro' placeholder="intro" required>
+
+            <label for="email"><b>Introduction</b></label>
+            <input type="text" name='intro' placeholder="introduction" required>
+
+            <label for="email"><b>location</b></label>
             <input type="text" name='location' placeholder="location" required>
+
+            <label for="email"><b>Contact</b></label>
             <input type="number" name="contact" placeholder="contact" required>
+
+            <label for="email"><b>Email</b></label>
             <input type="text" name='email' placeholder="email" required>
+
             <button type="submit">register</button> 
 
         </form>
+        
 
 
 </body>
